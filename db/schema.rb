@@ -25,11 +25,11 @@ ActiveRecord::Schema.define(version: 2021_09_14_152816) do
     t.string "latitude"
     t.string "longitude"
     t.string "device_id"
-    t.bigint "cars_id"
+    t.bigint "car_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["cars_id"], name: "index_location_reports_on_cars_id"
+    t.index ["car_id"], name: "index_location_reports_on_car_id"
   end
 
-  add_foreign_key "location_reports", "cars", column: "cars_id"
+  add_foreign_key "location_reports", "cars"
 end

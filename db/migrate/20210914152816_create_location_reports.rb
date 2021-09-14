@@ -5,7 +5,7 @@ class CreateLocationReports < ActiveRecord::Migration[6.1]
       t.string :longitude
       t.string :device_id
 
-      t.references :cars, foreign_key: true
+      t.references :car, foreign_key: true
       t.timestamps
     end
   end

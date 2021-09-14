@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+['ABC', 'BCD', '123A', 'ABDC'].each do |licence|
+  Car.create(license: licence)
+end
